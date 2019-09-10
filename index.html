@@ -3,46 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hangman Game</title>
-	
-	<!-- Bootstrap CDN -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi21kFfwwEAa8hDOdjZ1pLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
-    
 </head>
-
 <body>
 	<div class="container">
 		<img src="assets/images/Lambo_Hangman.png" alt="Hangman" class="center">
     </div>
     </div>
 <div class="container">
-  <div class="row justify-content-center">
+    <div class="row justify-content-center">
         <div class="col">
             <img src="assets/images/car_hangman.jpg" alt="Car Hangman" class="center">
         </div>
-        <div class="col">
+            <div class="col">
             <div class="font">PRESS ANY KEY TO GET STARTED!</div>
-
             <div class="font">WINS<div id="winCounter"></div></div>
-		
-			<div class="font">CURRENT WORD
-		
-	  	
+		    <div class="font">CURRENT WORD
             <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
             </div>
-		
-	        <div class="font">NUMBER OF GUESSES REMAINING<div id="numGuesses"></div></div>
-	 
-            
-            <div class="font">LETTERS ALREADY GUESSED<div id="wrongGuesses"></div></div>
-        
-    </div>
-  </div>  
+	        <div class="font">NUMBER OF GUESSES REMAINING<div id="numGuesses"></div></div> 
+            <div class="font">LETTERS ALREADY GUESSED<div id="wrongGuesses"></div></div>  
+        </div>
+    </div>  
 </div>	
 <br>
 <br>
-
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
