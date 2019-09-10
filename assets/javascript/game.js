@@ -23,6 +23,14 @@ var wordBank =['chevrolet',
                'volkswagen',
                'mitsubishi',
                'subaru',
+               'datsun',
+               'tesla',
+               'jaguar',
+               'bentley',
+               'nissan',
+               'porsche',
+               'lexus',
+               'suzuki'
 ];
 //Holds choosenWord
 var choosenWord = "";
@@ -37,7 +45,7 @@ var wrongLetters = [];
 //Counters
 var winCount = 0;
 var loseCount = 0;
-var guessesLeft = 9;
+var guessesLeft = 10;
 var rightGuessCounter = 0;
 //FUNCTIONS
 //----------------------------------------
@@ -54,7 +62,7 @@ function reset()
 	//===========================================================
 	letterGuessed = 0;
 	rightGuessCounter = 0;
-	guessesLeft = 9;
+	guessesLeft = 10;
 	wrongLetters =[];
 	blanksAndSuccesses =[];
 	doubleWord = ['a','b','c',
@@ -81,7 +89,7 @@ function startGame()
 	//RESET
 	//===========================================================
 	rightGuessCounter = 0;
-	guessesLeft = 9;
+	guessesLeft = 10;
 	wrongLetters =[];
 	blanksAndSuccesses =[];
 	doubleWord = ['a','b','c',
@@ -169,7 +177,7 @@ function winLose()
 
 //MAIN PROCCESS
 //-------------------------------------------	
-//Initiates the Code
+//Starts the Code
 startGame();
 
 document.onkeyup = function(event)
@@ -181,9 +189,6 @@ document.onkeyup = function(event)
 		if(letterGuessed === doubleWord[i] && test === true)
 		{
 			var spliceDword = doubleWord.splice(i,1);
-			//Test / Debug
-			console.log('Double word is = ' + doubleWord[i])
-			console.log('Spliced Word is = ' + spliceDword);
 
 			compareLetters(letterGuessed);
 			winLose();

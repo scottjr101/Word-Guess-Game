@@ -1,14 +1,17 @@
 .container {
-    
+    background-color: black;
     
 }
 .col {
-    border: dotted 2px black;
+    border: dotted 4px white;
+    height: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .row {
     
-    border: dotted 2px black;
+    
 }
 
 .center {
@@ -17,4 +20,18 @@
     margin-right: auto;
     width: 60%;
     padding-bottom: 10px;
+}
+
+.font {
+    color: white;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    align-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+    background-color: black;
   }
