@@ -105,13 +105,7 @@ function startGame()
 	document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses.join(' ');
 	document.getElementById('numGuesses').innerHTML = guessesLeft;
 	document.getElementById('winCounter').innerHTML = winCount;
-	document.getElementById('lossCounter').innerHTML = loseCount;
 	document.getElementById('wrongGuesses').innerHTML = wrongLetters;
-	// Testing / Debugging
-	console.log(choosenWord);
-	console.log(lettersInWord);
-	console.log(numBlanks);
-	console.log(blanksAndSuccesses);
 }
 
 function compareLetters(userKey)
@@ -167,8 +161,7 @@ function winLose()
 	{
 		//Counts losses
 		loseCount++;
-		//Changes HTML
-		document.getElementById('lossCounter').innerHTML = loseCount;
+		//Alerts player they lose
 		alert('You Lose');
 		reset();
 	}
