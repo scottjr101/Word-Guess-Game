@@ -22,15 +22,11 @@ var wordBank =['chevrolet',
                'lexus',
                'suzuki'
 ];
-//Holds choosenWord
+//Elements for HTML
 var choosenWord = "";
-//Holds letters in word
 var lettersInWord = [];
-//Holds number of blanks in word
 var numBlanks = 0;
-//Holds Blanks and successful guesses
 var blanksAndSuccesses =[];
-//Holds Wrong guesses
 var wrongLetters = [];
 //Counters
 var winCount = 0;
@@ -115,9 +111,7 @@ function compareLetters(userKey)
 					document.getElementById('numGuesses').innerHTML = guessesLeft;
 					document.getElementById('wrongGuesses').innerHTML = wrongLetters;
 				}
-			
-			
-		
+					
 }
 function winLose()
 {
