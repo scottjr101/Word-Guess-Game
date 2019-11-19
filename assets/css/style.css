@@ -1,15 +1,25 @@
+.top {
+    background-color: rgb(56, 56, 56);
+    border-bottom: solid 1px white;
+}
+
+#googleFont {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    color: white;
+}
+
 .container {
     background-color: black;
 }
 .col {
-    border: dotted 4px white;
+    border: ridge 5px white;
     height: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.row {
 
-}
 .center {
     display: block;
     margin-left: auto;
@@ -26,6 +36,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.bottom {
+    background-color: rgb(56, 56, 56);
+    border-top: solid 1px white;
+}
+
 body {
-    background-color: black;
+    background-image: url("../images/dark-honeycomb.png");
   }

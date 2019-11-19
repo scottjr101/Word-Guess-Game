@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Hangman Game</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS     -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	<div class="container">
-		<img src="assets/images/Lambo_Hangman.png" alt="Hangman" class="center">
+    <div class="container-fluid mb-4 top">
+        <h1 id="googleFont">Car Brand Hangman</h1>
     </div>
-    </div>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col">
-            <img src="assets/images/car_hangman.jpg" alt="Car Hangman" class="center">
-        </div>
+    <div class="container">
+        <div class="row justify-content-center">
             <div class="col">
-            <div class="font">PRESS ANY KEY TO GET STARTED!</div>
-            <div class="font">WINS<div id="winCounter"></div></div>
-		    <div class="font">CURRENT WORD
-            <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+                <div class="card border-0">
+                    <img id="lambo" src="assets/images/Lambo_Hangman.png" alt="Hangman">
+                </div>
             </div>
-	        <div class="font">NUMBER OF GUESSES REMAINING<div id="numGuesses"></div></div> 
-            <div class="font">LETTERS ALREADY GUESSED<div id="wrongGuesses"></div></div>  
+            <div class="col">
+                <div class="font">PRESS ANY KEY TO GET STARTED!</div>
+                <div class="font">WINS<div id="winCounter"></div>
+                </div>
+                <div class="font">CURRENT WORD
+                    <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+                </div>
+                <div class="font">NUMBER OF GUESSES REMAINING<div id="numGuesses"></div>
+                </div>
+                <div class="font">LETTERS ALREADY GUESSED<div id="wrongGuesses"></div>
+                </div>
+            </div>
         </div>
-    </div>  
-</div>	
-<br>
-<br>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+    </div>
+    <footer class="container-fluid fixed-bottom d-flex align-items-center justify-content-center bottom">
+        <a href="https://github.com/scottjr101/Word-Guess-Game">
+            <button type="button" class="btn btn-light mt-3 mb-3 mr-3">GitHub Repo</button></a>
+        <a href="https://scottjr101.github.io/">
+            <button type="button" class="btn btn-light">Portfolio</button></a>
+    </footer>
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
